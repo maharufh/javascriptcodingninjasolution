@@ -1,0 +1,38 @@
+function fact(n){
+ if (n === 0 || n === 1) {
+        return 1;
+        //recursion case
+ } else if (n < 0) {
+     return "Error";
+ }
+   
+ else {
+         return n * fact(n - 1);
+     
+    }
+}
+
+
+//for the above case only 5 case are passed
+// for the below case only 6 case are passed
+
+function fact(n){
+ 	
+	if(n===0)
+    	return 1 ;
+    
+    if(n < 0) 
+	  return("Error");
+		
+	 let i = n;
+	 let fact = 1;
+	 
+	 while(n / i != n) {
+		fact = fact * i;
+		i--;
+	}
+			
+	return fact ;
+
+}
+
